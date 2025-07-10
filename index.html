@@ -1,76 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <meta name="description" content="Бронюйте квитки на подію року — незабутній концерт із зірками української сцени. Дата: 25 березня 2025 року, місце: концертна зала 'Україна', Київ.">
+    <title>Не вір своїм очам — Галерея оптичних ілюзій</title>
+    <meta name="description"
+        content="Добірка вражаючих оптичних ілюзій, які змусять вас сумніватися у власному зорі. Вивчай зорові ефекти, що обманюють мозок!">
+    <meta name="keywords" content="оптичні ілюзії, зорові обмани, ілюзії, мозок, зір, ілюстрації, галерея">
+    <meta property="og:title" content="Галерея оптичних ілюзій">
+    <meta property="og:description"
+        content="Візуальні обмани, що змусять тебе сумніватись у реальності. Переглянь найкращі оптичні ілюзії!">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <a href="#main-content" class="skip-link">Перейти до основного вмісту</a> <!-- Skip link for accessibility -->
     <header>
-        <h1>Подія року: Концерт у вашому місті!</h1>
-        <nav>
-            <ul>
-                <li><a href="#about-event">Про подію</a></li>
-                <li><a href="#tickets">Квитки</a></li>
-                <li><a href="#contact">Контакти</a></li>
-            </ul>
-        </nav>
+        <h1>Не вір своїм очам</h1>
+        <p>Галерея оптичних ілюзій</p>
     </header>
 
-    <main id="main-content">
-        <section id="about-event">
-            <h2>Про подію</h2>
-            <p>Приєднуйтесь до незабутнього концерту із зірками української сцени. Це подія, яку не можна пропустити!
-                Насолоджуйтесь живою музикою, неймовірною атмосферою та хорошим настроєм.</p>
-            <p><strong>Дата:</strong> 25 березня 2025 року</p>
-            <p><strong>Місце:</strong> Концертна зала "Україна", м. Київ</p>
+    <main>
+        <section id="gallery">
+            <h2>Оптичні ілюзії</h2>
+
+            <article>
+                <h3>Ілюзія Мюллера-Лайєра</h3>
+                <img src="https://upravlenie.org/upload/000/u1/3/d/myullera-laiera-illyuzii.jpg" alt="Ілюзія Мюллера-Лайєра" loading="lazy">
+                <p>Дві однакові лінії виглядають різної довжини через стрілки на кінцях. Насправді вони однакові!</p>
+            </article>
+
+            <article>
+                <h3>Ілюзія №2</h3>
+                <img src="https://mariart.kiev.ua/image/catalog/sber/600000391445b0.jpg" alt="Ілюзія з тінню" loading="lazy">
+            </article>
+
+            <article>
+                <h3>Ілюзія №3</h3>
+                <img src="https://www.bsmu.edu.ua/wp-content/uploads/2024/05/optical-illusions.jpeg" alt="Ілюзія з тінню" loading="lazy">
+            </article>
+
+            <article>
+                <h3>Ілюзія №4</h3>
+                <img src="https://media.istockphoto.com/id/1201831758/uk/%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%BD%D1%96-%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F/%D0%BE%D0%BF%D1%82%D0%B8%D1%87%D0%BD%D0%B0-3d-%D1%96%D0%BB%D1%8E%D0%B7%D1%96%D1%8F.jpg?s=612x612&w=0&k=20&c=HcqnbeWuRVimNvVc6athDkSC41pRI37imkVMg6h7msI=" alt="Ілюзія з тінню" loading="lazy">
+                <p>Ілюзія векторної графіки</p>
+            </article>
+
         </section>
 
-        <section id="tickets">
-            <h2>Квитки</h2>
-            <p>Виберіть тип квитка та заповніть форму бронювання:</p>
-            <form action="/submit-ticket" method="post">
-                <label for="ticket-type">Тип квитка:</label>
-                <select id="ticket-type" name="ticket-type" required>
-                    <option value="standard">Стандартний - 500 грн</option>
-                    <option value="vip">VIP - 1000 грн</option>
-                </select>
-
-                <label for="name">Ваше ім'я:</label>
-                <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="example@mail.com
-" required>
-
-                <label for="phone">Телефон:</label>
-                <input type="tel" id="phone" name="phone" placeholder="+380123456789" required>
-
-                <button type="submit">Забронювати</button>
+        <section id="submit-illusion">
+            <h2>Поділитись своєю ілюзією</h2>
+            <form>
+                <input type="text" placeholder="Назва ілюзії" required>
+                <input type="text" placeholder="Посилання на зображення або джерело" required>
+                <textarea placeholder="Опис або ефект ілюзії" required></textarea>
+                <button type="submit">Надіслати</button>
             </form>
-        </section>
-
-        <section id="contact">
-            <h2>Контакти</h2>
-            <p>Зв’яжіться з нами, якщо маєте запитання:</p>
-            <address>
-                <p>Email: <a href="mailto:info@tickets.ua
-">
-                        info@tickets.ua
-                    </a></p>
-                <p>Телефон: <a href="tel:+380987654321">+380 98 765 4321</a></p>
-            </address>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Бронювання квитків. Усі права захищено.</p>
+        <p>&copy; 2025 Галерея оптичних ілюзій</p>
+        
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
